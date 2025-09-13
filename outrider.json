@@ -1,0 +1,76 @@
+{
+  "version": "1.0.0",
+  "fileTypes": ["js", "ts", "jsx", "tsx"],
+  "ignorePatterns": [
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/.git/**",
+    "**/*.min.js",
+    "**/*.bundle.js"
+  ],
+  "rules": {
+    "no-console-log": {
+      "enabled": true,
+      "severity": "warning"
+    },
+    "no-debugger": {
+      "enabled": true,
+      "severity": "error"
+    },
+    "no-eval": {
+      "enabled": true,
+      "severity": "error"
+    },
+    "no-var": {
+      "enabled": true,
+      "severity": "warning"
+    },
+    "prefer-const": {
+      "enabled": true,
+      "severity": "warning"
+    },
+    "no-unused-variables": {
+      "enabled": true,
+      "severity": "warning"
+    }
+  },
+  "ml": {
+    "enabled": true,
+    "confidenceThreshold": 0.7,
+    "maxWarningsPerFile": 10,
+    "categories": {
+      "race-condition": {
+        "enabled": true,
+        "severity": "warning"
+      },
+      "memory-leak": {
+        "enabled": true,
+        "severity": "warning"
+      },
+      "null-access": {
+        "enabled": true,
+        "severity": "warning"
+      },
+      "type-safety": {
+        "enabled": true,
+        "severity": "warning"
+      },
+      "performance": {
+        "enabled": true,
+        "severity": "warning"
+      }
+    }
+  },
+  "output": {
+    "format": "console",
+    "includeStats": true,
+    "includeSuggestions": true,
+    "maxIssuesPerFile": 50
+  },
+  "thresholds": {
+    "maxWarnings": 100,
+    "maxErrors": 10,
+    "minRiskScore": 70
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "outrider-cli",
+  "version": "1.0.0",
+  "description": "A predictive code analysis tool that learns from universal bug patterns",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest",
+    "lint": "eslint .",
+    "build": "echo 'No build step required for Node.js CLI'"
+  },
+  "bin": {
+    "outrider": "./index.js"
+  },
+  "keywords": [
+    "code-analysis",
+    "bug-detection",
+    "machine-learning",
+    "linting",
+    "predictive-analysis",
+    "code-quality"
+  ],
+  "author": "Sambhrama",
+  "license": "MIT",
+  "dependencies": {
+    "yargs": "^17.7.2",
+    "chalk": "^4.1.2",
+    "glob": "^10.3.10",
+    "esprima": "^4.0.1",
+    "typescript": "^5.3.3",
+    "@types/node": "^20.10.5"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "eslint": "^8.56.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sambhrama24/outrider.git"
+  }
+}
